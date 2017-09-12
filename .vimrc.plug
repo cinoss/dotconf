@@ -34,5 +34,7 @@ Plug 'gregsexton/matchtag'
 Plug 'derekwyatt/vim-scala'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'mxw/vim-jsx'
+
 
 call plug#end()

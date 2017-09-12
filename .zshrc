@@ -2,12 +2,12 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/cinoss/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="cloud"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="/Users/dangtc/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 eval $(thefuck --alias)
@@ -96,16 +96,6 @@ alias antlr4='java -jar /usr/local/lib/antlr-4.5.3-complete.jar'
 alias grun='java org.antlr.v4.gui.TestRig'
 alias bci='brew cask install'
 alias bi='brew install'
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/dangtc/Code/google-cloud-sdk/path.zsh.inc ]; then
- source '/Users/dangtc/Code/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-#if [ -f /Users/dangtc/Code/google-cloud-sdk/completion.zsh.inc ]; then
-# source '/Users/dangtc/Code/google-cloud-sdk/completion.zsh.inc'
-#fi
 
 alias backend='cd ~/Code/shopee/shopee_backend/'
 alias mall='cd ~/Code/shopee/beeshop_web/'
@@ -167,9 +157,6 @@ alias cleannode="ind . | grep -E 'node_modules$' | xargs rm -r"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 
-# source "/Users/dangtc/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-
-
 esun_bt_pay() {
   if ! [ ${#1} -eq "5" ]; then
     echo "Payable should be 5 digits: $1"
@@ -189,3 +176,9 @@ export EDITOR=vim
 export SHELL=zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
