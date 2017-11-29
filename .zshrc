@@ -7,7 +7,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="cloud"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -125,6 +126,8 @@ alias nig='yarn global add'
 alias ni='yarn add'
 alias nid='yarn add -D'
 
+alias tma="tmux a"
+
 
 export PATH=${PATH}:/Applications/Genymotion.app/Contents/MacOS/tools/
 # export ANDROID_HOME=~/Library/Android/sdk
@@ -181,4 +184,9 @@ export SHELL=zsh
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+export GOPATH=$HOME/go-nuts
+export GOBIN=$HOME/go-nuts/bin
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 
