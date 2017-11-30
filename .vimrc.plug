@@ -36,6 +36,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'mxw/vim-jsx'
 Plug 'zopim/vim-jxml'
-
+Plug 'tmhedberg/SimpylFold'
 
 call plug#end()

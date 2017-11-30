@@ -20,9 +20,13 @@ set pastetoggle=<F2>
 " Uncomment below to set the max textwidth. Use a value corresponding to the width of your screen.
 " set textwidth=79
 set formatoptions=tcqrn1
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set textwidth=79
+set autoindent
+set fileformat=unix
+set encoding=utf-8
 set expandtab
 set noshiftround
 
@@ -192,4 +196,10 @@ endtry
 
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+let g:go_version_warning = 0
+
+" SimpylFold
+set foldmethod=indent
+let g:SimpylFold_docstring_preview=1
 
