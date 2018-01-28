@@ -10,6 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="agnoster"
 # ZSH_THEME="cloud"
 
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -104,6 +105,7 @@ alias partner='cd ~/Code/shopee/shopee_partner_platform/'
 alias api='cd ~/Code/shopee/shopee_api_service/'
 alias seller='cd ~/Code/shopee/shopee_powerseller/'
 alias apidoc='cd ~/Code/shopee/shopee-webapi-doc/'
+alias bstail='sh ~/Code/shopee/my-scripts/bstail.sh'
 
 alias lestalk='cd ~/Code/lestalk/'
 
@@ -119,7 +121,6 @@ alias ds='docker stack'
 
 alias wire='cd ~/Code/smart-wire/'
 
-alias bstail='sh ~/Code/shopee/my-scripts/bstail.sh'
 
 alias nr='yarn run'
 alias nig='yarn global add'
@@ -129,7 +130,7 @@ alias nid='yarn add -D'
 alias tma="tmux a"
 
 
-export PATH=${PATH}:/Applications/Genymotion.app/Contents/MacOS/tools/
+# export PATH=${PATH}:/Applications/Genymotion.app/Contents/MacOS/tools/
 # export ANDROID_HOME=~/Library/Android/sdk
 # export PATH=${PATH}:${ANDROID_HOME}/tools
 # export PATH=${PATH}:${ANDROID_HOME}/platform-tools
@@ -159,6 +160,7 @@ otofile/ --python_out=bridge/protobuf/pb/ bridge/protofile/beeshop_backend.proto
 alias cleannode="ind . | grep -E 'node_modules$' | xargs rm -r"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
+alias tubudd="cd ~/Code/tubudd/web/tubudd"
 
 esun_bt_pay() {
   if ! [ ${#1} -eq "5" ]; then
@@ -179,6 +181,7 @@ export EDITOR=vim
 export SHELL=zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
@@ -189,3 +192,5 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
