@@ -1,3 +1,5 @@
+set exrc
+
 " Set compatibility to Vim only.
 set nocompatible
 
@@ -101,6 +103,8 @@ nnoremap <F3> :NERDTreeToggle<CR>
 
 let g:ctrlp_map = '<c-f>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 
 
 let g:airline_theme='deus'
@@ -202,4 +206,7 @@ let g:go_version_warning = 0
 " SimpylFold
 set foldmethod=indent
 let g:SimpylFold_docstring_preview=1
+
+
+set secure
 

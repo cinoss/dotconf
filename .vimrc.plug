@@ -37,5 +37,6 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'mxw/vim-jsx'
 Plug 'zopim/vim-jxml'
 Plug 'tmhedberg/SimpylFold'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
