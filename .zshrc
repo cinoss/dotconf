@@ -192,5 +192,4 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
