@@ -38,5 +38,6 @@ Plug 'mxw/vim-jsx'
 Plug 'zopim/vim-jxml'
 Plug 'tmhedberg/SimpylFold'
 Plug 'leafgarland/typescript-vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
